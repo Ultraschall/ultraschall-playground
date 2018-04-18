@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Ultraschall.Podcasting.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "-file ../feeds.txt"
+    }
+  }
+}
