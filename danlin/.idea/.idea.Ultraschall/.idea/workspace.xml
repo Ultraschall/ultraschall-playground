@@ -2,84 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7eb890f-7c97-451c-8c29-e36d81f1dd25" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Ultraschall/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Ultraschall/.idea/dataSources/d8b89d56-598d-455a-b4da-a0a93c62d2c7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Ultraschall/.idea/dataSources/d8b89d56-598d-455a-b4da-a0a93c62d2c7/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Ultraschall/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Api/Controllers/CategoriesController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Api/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Api/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Api/Ultraschall.Api.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Api/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Api/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/DependencyInjectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Design/DesignTimeDbContextFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Design/DesignTimeServices.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Migrations/20180424134344_init.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Migrations/20180424134344_init.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Migrations/UltraschallContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/CategoriesRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/ChaptersRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/ContributionsRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/ContributorPresencesRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/ContributorRolesRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/ContributorsRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/EpisodesRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/GenericRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/ImagesRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/LocationsRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/PodcastsRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/SeasonsRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Repository/ShownoteRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/Ultraschall.Data.EntityFramework.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/UltraschallContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall.Data.EntityFramework/ultraschall.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Abstractions/ICategoriesRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Abstractions/IEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Abstractions/IGenericRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/AnnotationBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Category.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Chapter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Contribution.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Contributor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/ContributorPresence.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/ContributorRole.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Episode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Image.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Location.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Podcast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Season.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Shownote.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/TagBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Domain/Abstractions/ICategoriesService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Domain/Abstractions/IKeyReference.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Domain/Abstractions/IModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Domain/DependencyInjectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Domain/Models/CategoryModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Domain/Services/CategoriesService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Feed/PodcastReaderServiceException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultraschall/Ultraschall.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ultraschall/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ultraschall/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ultraschall/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ultraschall/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting.Cli/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall.Podcasting.Cli/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting.Cli/Ultraschall.Podcasting.Cli.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall.Podcasting.Cli/Ultraschall.Podcasting.Cli.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Caching/FileCache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Caching/FileCache.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Caching/FileCacheOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Caching/FileCacheOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Common.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Feed/Common.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Feed/Models/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Models/Enclosure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Feed/Models/Enclosure.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Models/Episode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Feed/Models/Episode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Models/Link.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Feed/Models/Link.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Models/Podcast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Feed/Models/Podcast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/PodcastFeedService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Feed/PodcastReaderService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/PodcastFeedServiceException.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Reader/EpisodeReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Feed/Reader/EpisodeReader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Reader/LinkReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Feed/Reader/LinkReader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Reader/PodcastEpisodeReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Feed/Reader/PodcastEpisodeReader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Reader/PodcastReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Feed/Reader/PodcastReader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.Podcasting/Ultraschall.Podcasting.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ultraschall.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ultraschall/Data/Entities/AnnotationBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/AnnotationBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ultraschall/Data/Entities/Chapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Chapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ultraschall/Data/Entities/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/Image.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ultraschall/Data/Entities/TagBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Ultraschall/Data/Entities/TagBase.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -114,10 +41,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CategoriesService.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CategoriesService.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ultraschall/Domain/Services/CategoriesService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
+            <state relative-caret-position="11">
               <caret line="58" column="14" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
               <folding>
                 <marker date="1524635985246" expanded="false" signature="6:238" ph="..." />
@@ -139,15 +66,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ICategoriesService.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ultraschall/Domain/Abstractions/ICategoriesService.cs">
+      <file leaf-file-name="AnnotationBase.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ultraschall/Data/Entities/AnnotationBase.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="1">
+              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
               <folding>
-                <marker date="1524635256702" expanded="false" signature="6:110" ph="..." />
-                <marker date="1524635256702" expanded="true" signature="153:485" ph="{...}" />
-                <marker date="1524635256702" expanded="true" signature="195:483" ph="{...}" />
+                <marker date="1524529186163" expanded="true" signature="50:235" ph="{...}" />
+                <marker date="1524529186163" expanded="true" signature="94:233" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chapter.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ultraschall/Data/Entities/Chapter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <folding>
+                <marker date="1524565575928" expanded="false" signature="6:50" ph="..." />
+                <marker date="1524565575928" expanded="true" signature="87:192" ph="{...}" />
+                <marker date="1524565575928" expanded="true" signature="131:190" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Image.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Ultraschall/Data/Entities/Image.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1524529530286" expanded="true" signature="35:265" ph="{...}" />
+                <marker date="1524529530286" expanded="true" signature="77:263" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -261,6 +213,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Daniel Lindenfelser &lt;daniel@lindenfelser.de&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -580,14 +537,29 @@
       <workItem from="1524485702683" duration="213000" />
       <workItem from="1524526585859" duration="7020000" />
       <workItem from="1524568711623" duration="2033000" />
-      <workItem from="1524576530804" duration="11570000" />
+      <workItem from="1524576530804" duration="11842000" />
     </task>
+    <task id="LOCAL-00001" summary="add api demo">
+      <created>1524636525551</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524636525551</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add api demo">
+      <created>1524636655682</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524636655682</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34380000" />
+    <option name="totallyTimeSpent" value="34652000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -598,9 +570,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="35" width="2560" height="1565" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32964426" />
       <window_info anchor="right" id="Errors In Solution" order="3" weight="0.3296837" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5011719" side_tool="true" weight="0.37391305" />
@@ -615,6 +586,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4988281" weight="0.37391305" />
       <window_info anchor="right" id="Database" order="3" weight="0.3296837" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4984375" weight="0.3993808" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -625,7 +597,6 @@
       <window_info anchor="bottom" id="Inspection Results" order="8" visible="true" weight="0.32972136" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,13 +606,17 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="add api demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add api demo" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Ultraschall/Data/Entities/Timestamp.cs" />
     <entry file="file://$PROJECT_DIR$/Ultraschall/Data/Entities/ContributorRole.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -695,20 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ultraschall/Data/Entities/Chapter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ultraschall/Data/Entities/AnnotationBase.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1160,7 +1121,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ultraschall/Domain/Services/CategoriesService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
+        <state relative-caret-position="11">
           <caret line="58" column="14" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
           <folding>
             <marker date="1524635985246" expanded="false" signature="6:238" ph="..." />
@@ -1177,6 +1138,39 @@
             <marker date="1524635985246" expanded="true" signature="1657:1843" ph="{...}" />
             <marker date="1524635985246" expanded="true" signature="1917:2063" ph="{...}" />
             <marker date="1524635985246" expanded="true" signature="1972:2052" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ultraschall/Data/Entities/AnnotationBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding>
+            <marker date="1524529186163" expanded="true" signature="50:235" ph="{...}" />
+            <marker date="1524529186163" expanded="true" signature="94:233" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ultraschall/Data/Entities/Chapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding>
+            <marker date="1524565575928" expanded="false" signature="6:50" ph="..." />
+            <marker date="1524565575928" expanded="true" signature="87:192" ph="{...}" />
+            <marker date="1524565575928" expanded="true" signature="131:190" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ultraschall/Data/Entities/Image.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1524529530286" expanded="true" signature="35:265" ph="{...}" />
+            <marker date="1524529530286" expanded="true" signature="77:263" ph="{...}" />
           </folding>
         </state>
       </provider>
