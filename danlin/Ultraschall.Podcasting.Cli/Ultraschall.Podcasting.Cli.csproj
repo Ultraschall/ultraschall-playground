@@ -18,4 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Ultraschall\Ultraschall.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cache\" />
+  </ItemGroup>
 </Project>

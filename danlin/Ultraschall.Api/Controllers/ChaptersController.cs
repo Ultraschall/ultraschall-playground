@@ -1,42 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Ultraschall.Data.Abstractions;
 using Ultraschall.Data.Entities;
-using Ultraschall.Domain.Abstractions;
-using Ultraschall.Domain.Models;
 
-
-// With Service and Repository
+// Only Repository
 namespace Ultraschall.Api.Controllers
 {
     [Route("api/[controller]")]
-    public class CategoriesController : Controller
+    public class ChaptersController : Controller
     {
-        private readonly ICategoriesService _service;
-        public CategoriesController(ICategoriesService service)
+        private readonly IGenericRepository<Chapter> _repository;
+        public ChaptersController(IGenericRepository<Chapter> repository)
         {
-            _service = service ?? throw new ArgumentNullException(nameof(service));
+            _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
         
         // GET api/categories
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<CategoryModel>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(IEnumerable<Chapter>), (int)HttpStatusCode.OK)]
         public IActionResult Get()
         {
-            return Ok(_service.GetAll());
+            return Ok(_repository.GetAll());
         }
-
-        // GET api/categories/34bb1dbe-6267-40d3-b6a9-056453bb9b5f
+        
+         // GET api/categories/34bb1dbe-6267-40d3-b6a9-056453bb9b5f
         [HttpGet("{id}")]
-        [ProducesResponseType(typeof(CategoryModel), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(Chapter), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> Get([FromRoute]Guid id)
         {
-            var result = await _service.GetById(id);
+            var result = await _repository.GetById(id);
             if (result == null) return NotFound();
 
             return Ok(result);
@@ -46,17 +42,21 @@ namespace Ultraschall.Api.Controllers
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
-        public async Task<IActionResult> Post([FromBody] CategoryModel category)
+        public async Task<IActionResult> Post([FromBody] Chapter chapter)
         {
-            if (category == null)
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            if (chapter == null)
             {
                 return BadRequest();
             }
 
             try
             {
-                await _service.Create(category);
-                return CreatedAtAction(nameof(Get),new { id = category.Id });
+                await _repository.Create(chapter);
+                return CreatedAtAction(nameof(Get), new { id = chapter.Id });
             }
             catch (Exception ex)
             {
@@ -68,15 +68,15 @@ namespace Ultraschall.Api.Controllers
         [HttpPut("{id}")]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
-        public async Task<IActionResult> Put([FromRoute]Guid id, [FromBody] CategoryModel category)
+        public async Task<IActionResult> Put([FromRoute]Guid id, [FromBody] Chapter chapter)
         {
-            if (category == null || category.Id != id)
+            if (chapter == null || chapter.Id != id)
             {
                 return BadRequest();
             }
 
             try { 
-                await _service.Update(id, category);
+                await _repository.Update(id, chapter);
                 return NoContent();
             }
             catch (Exception ex)
@@ -92,24 +92,7 @@ namespace Ultraschall.Api.Controllers
         public async Task<IActionResult> Delete([FromRoute]Guid id)
         {
             try { 
-                await _service.Delete(id);
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-        // Patch api/categories/34bb1dbe-6267-40d3-b6a9-056453bb9b5f
-        [HttpPatch("{id}")]
-        [ProducesResponseType((int)HttpStatusCode.NoContent)]
-        [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
-        public async Task<IActionResult> SetParent([FromRoute]Guid id, [FromBody] CategoryPatchModel patchModel)
-        {
-            try
-            {
-                await _service.Patch(id, patchModel);
+                await _repository.Delete(id);
                 return NoContent();
             }
             catch (Exception ex)

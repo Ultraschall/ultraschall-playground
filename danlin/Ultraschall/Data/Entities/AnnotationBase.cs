@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Ultraschall.Data.Entities
+﻿namespace Ultraschall.Data.Entities
 {
     public class AnnotationBase : TagBase
     {

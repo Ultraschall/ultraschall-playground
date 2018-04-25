@@ -21,7 +21,28 @@ namespace Ultraschall.Domain.Services
         {
             return _repository.GetSubCategories(id).Select(entity => MapEntityToModel(entity)).AsEnumerable();
         }
-        
+
+        private CategoryModel MapEntityToModel(Category entity)
+        {
+            if (entity == null) return null;
+
+            return new CategoryModel
+            {
+                Id = entity.Id,
+                Name = entity.Name,
+                Parent = entity.Parent == null ? null : new CategoryReferene { Id = entity.Parent.Id }
+            };
+        }
+
+        private Category MapModelToEntity(CategoryModel model)
+        {
+            return new Category
+            {
+                Id = model.Id,
+                Name = model.Name
+            };
+        }
+
         public IEnumerable<CategoryModel> GetAll()
         {
             return _repository.GetAll()
@@ -49,23 +70,16 @@ namespace Ultraschall.Domain.Services
             await _repository.Delete(id);
         }
 
-        public CategoryModel MapEntityToModel(Category entity)
+        public async Task Patch(Guid id, CategoryPatchModel patchModel)
         {
-            return new CategoryModel
+            if (patchModel.Parent != Guid.Empty)
             {
-                Id = entity.Id,
-                Name = entity.Name,
-                Parent = entity.Parent == null ? null : new CategoryReferene { Id = entity.Parent.Id }
-            };
-        }
-
-        public Category MapModelToEntity(CategoryModel model)
-        {
-            return new Category
+                await _repository.SetParent(id, patchModel.Parent);
+            }
+            if (patchModel.Child != Guid.Empty)
             {
-                Id = model.Id,
-                Name = model.Name
-            };
+                await _repository.SetParent(id, patchModel.Child);
+            }
         }
     }
 }

@@ -5,17 +5,17 @@ namespace Ultraschall.Feed
     // ReSharper disable once InconsistentNaming
     struct iTunes
     {
-        public static XNamespace Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd";
+        public static readonly XNamespace Namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd";
     }
 
     struct Podlove
     {
-        public static XNamespace Namespace = "http://podlove.org/simple-chapters";
+        public static readonly XNamespace Namespace = "http://podlove.org/simple-chapters";
     }
 
     struct Atom
     {
-        public static XNamespace Namespace = "http://www.w3.org/2005/Atom";
+        public static readonly XNamespace Namespace = "http://www.w3.org/2005/Atom";
     }
     
     public enum Explicit
