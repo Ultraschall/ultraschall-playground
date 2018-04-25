@@ -16,9 +16,6 @@
     <DotNetCliToolReference Include="Microsoft.Extensions.Caching.SqlConfig.Tools" Version="1.0.0-msbuild3-final" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ultraschall.Podcasting\Ultraschall.Podcasting.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="cache" />
+    <ProjectReference Include="..\Ultraschall\Ultraschall.csproj" />
   </ItemGroup>
 </Project>

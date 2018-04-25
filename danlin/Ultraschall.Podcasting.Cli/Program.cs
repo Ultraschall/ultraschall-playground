@@ -6,8 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Events;
-using Ultraschall.Podcasting.Caching;
-using Ultraschall.Podcasting.Models;
+using Ultraschall.Caching;
+using Ultraschall.Feed;
+using Ultraschall.Feed.Models;
 using ILogger = Microsoft.Extensions.Logging.ILogger;
 
 namespace Ultraschall.Podcasting.Cli
@@ -149,7 +150,7 @@ namespace Ultraschall.Podcasting.Cli
                 Path = "./cache"
             });
 
-            var parser = new PodcastFeedService(logger, cache);
+            var parser = new PodcastReaderService(logger, cache);
 
             if (configuration["Feed:Url"] != null)
             {
@@ -177,7 +178,7 @@ namespace Ultraschall.Podcasting.Cli
                     }
 
                 logger.LogInformation("Parse Podcasts");
-                PodcastFeedService.UpdateCache(feeds.ToArray(), logger, cache);
+                PodcastReaderService.UpdateCache(feeds.ToArray(), logger, cache);
             }
 
 
