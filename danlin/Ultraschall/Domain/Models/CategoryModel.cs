@@ -15,4 +15,10 @@ namespace Ultraschall.Domain.Models
         
         public IKeyReference Parent { get; set; }
     }
+
+    public class CategoryPatchModel
+    {
+        public Guid Parent { get; set; }
+        public Guid Child { get; set; }
+    }
 }

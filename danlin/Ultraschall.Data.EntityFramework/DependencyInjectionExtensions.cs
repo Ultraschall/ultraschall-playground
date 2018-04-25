@@ -14,6 +14,10 @@ namespace Ultraschall.Data.EntityFramework
                 options.UseSqlite(connectionString));
             services.AddScoped<ICategoriesRepository>(serviceProvider =>
                 new CategoriesRepository(serviceProvider.GetRequiredService<UltraschallContext>()));
+            services.AddScoped<IGenericRepository<Chapter>>(serviceProvider =>
+                new ChaptersRepository(serviceProvider.GetRequiredService<UltraschallContext>()));
+            services.AddScoped<IGenericRepository<Contribution>>(serviceProvider =>
+                new ContributionsRepository(serviceProvider.GetRequiredService<UltraschallContext>()));
         }
         
         public static void AddSqlDatabase(this IServiceCollection services)
